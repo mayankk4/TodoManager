@@ -5,7 +5,7 @@
       background-image: url(../images/title-bar.png);
       background-repeat: repeat;
       background-position: left top;
-      height: 35px;
+      height: 40px;
       padding-right: 8px;
       padding-left: 8px;
       color: #FFF;
@@ -23,5 +23,5 @@
       border-right-color: #327025;
       border-bottom-color: #327025;
       border-left-color: #459c32;
-      width: 8%;
+      width: 20%;
 }
