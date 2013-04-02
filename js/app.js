@@ -23,10 +23,15 @@ jQuery(function ($) {
 		},
 		store: function (namespace, data) {
 			if (arguments.length > 1) {
-				return localStorage.setItem(namespace, JSON.stringify(data));
+				// TODO: CHANGE THIS TO ADD TO SOME ARRAY
+				// return localStorage.setItem(namespace, JSON.stringify(data));
+				var store1 = '[{"id":"c2f03b16-46b2-4bbb-b61a-523b619667ff","title":"todo1","completed":false},{"id":"e7148e55-94eb-4c02-acd5-243077505467","title":"todo2","completed":false}]';
+				return (store1 && JSON.parse(store1)) || [];
 			} else {
-				var store = localStorage.getItem(namespace);
-				return (store && JSON.parse(store)) || [];
+				// TODO: CHANGE THIS TO RETURN SOME ARRAY
+//				var store = localStorage.getItem(namespace);
+				var store1 = '[{"id":"c2f03b16-46b2-4bbb-b61a-523b619667ff","title":"todo1","completed":false},{"id":"e7148e55-94eb-4c02-acd5-243077505467","title":"todo2","completed":false}]';
+				return (store1 && JSON.parse(store1)) || [];
 			}
 		}
 	};
