@@ -25,12 +25,13 @@ jQuery(function ($) {
 			if (arguments.length > 1) {
 				// TODO: CHANGE THIS TO ADD TO SOME ARRAY
 				// return localStorage.setItem(namespace, JSON.stringify(data));
-				var store1 = '[{"id":"c2f03b16-46b2-4bbb-b61a-523b619667ff","title":"todo1","completed":false},{"id":"e7148e55-94eb-4c02-acd5-243077505467","title":"todo2","completed":false}]';
+				//var store1 = '[{"id":"c2f03b16-46b2-4bbb-b61a-523b619667ff","title":"Dummy todo!","completed":false}]';
+				var store1 = '[]';
 				return (store1 && JSON.parse(store1)) || [];
 			} else {
 				// TODO: CHANGE THIS TO RETURN SOME ARRAY
-//				var store = localStorage.getItem(namespace);
-				var store1 = '[{"id":"c2f03b16-46b2-4bbb-b61a-523b619667ff","title":"todo1","completed":false},{"id":"e7148e55-94eb-4c02-acd5-243077505467","title":"todo2","completed":false}]';
+				// var store = localStorage.getItem(namespace);
+				var store1 = '[]';
 				return (store1 && JSON.parse(store1)) || [];
 			}
 		}

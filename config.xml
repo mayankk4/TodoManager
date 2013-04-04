@@ -20,6 +20,7 @@
     <license>
 	   Copyright Mayank Kandpal, 2013.
     </license>
-    
+
    	<feature name="nokia://s40.nokia.com/SAWRT/2.3" required="true" />
+
 </widget>
